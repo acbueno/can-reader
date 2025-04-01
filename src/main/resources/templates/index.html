@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Mensagens CAN</title>
+</head>
+<body>
+    <h1>Mensagens CAN Recebidas</h1>
+    <table border="1">
+        <tr>
+            <th>Timestamp</th>
+            <th>Mensagem</th>
+        </tr>
+        <tr th:each="msg : ${messages}">
+            <td th:text="${msg.timestamp}"></td>
+            <td th:text="${msg.message}"></td>
+        </tr>
+    </table>
+</body>
+</html>

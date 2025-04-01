@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: can-reader
+  data:
+    mongodb: 
+      database: can_network
+      uri: mongodb://root:4whLo5aoOWm8xRx@localhost:27017/can_network?authSource=admin
+server:
+  port: 8080

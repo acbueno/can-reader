@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  can-simulator:
+    build: ./
+    container_name: can-simulator
+    privileged: true  # Necessário para acessar o barramento CAN
+    network_mode: "host"
+    restart: always  
